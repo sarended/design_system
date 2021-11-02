@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  direction: rtl;
+  background-color: $background-color;
+  color: $text-color;
+  font-family: 'Shabnam';
+  line-height: 1.7;
+  a {
+    text-decoration: none;
+    color: $text-color;
+  }
+}
+
+.modal-bg {
+  z-index: 1100;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(225deg, #242424 0%, #363636 70%);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  button {
+    width: 120px;
+    height: 35px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Shabnam';
+    box-shadow: 0 0 0;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: $sc-2;
+  }
+  .modal-contents {
+    padding: 30px 60px;
+    text-align: center;
+  }
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+  border-bottom: 1px solid $text-color;
+}
+
+.toggle-sidebar {
+  display: none;
+}
+
+.mainframe {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 250px);
+}
+
+.sidebar {
+  width: 250px;
+  border-left: 1px solid $text-color;
+}
+
+.sidebar-title {
+  text-align: center;
+  padding: 10px 5px 5px;
+}
+
+.sidetab {
+  margin: 5px 15px;
+  width: calc(100%-30px);
+  height: 30px;
+  text-align: right;
+  padding: 8px 15px 5px 0;
+  border-radius: 4px;
+}
+.sidetab:hover {
+  background-color: $sc-2;
+  cursor: pointer;
+}
+
+.selected-tab {
+  background-color: $secondary-color;
+}
+.selected-tab:hover {
+  background-color: $sc-3;
+}
+
+.scroll-container {
+  height: calc(100vh - 92px);
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+.scroll-container::-webkit-scrollbar {
+  width: 10px;
+}
+.scroll-container::-webkit-scrollbar-track {
+  background: $sc-1;
+}
+.scroll-container::-webkit-scrollbar-thumb {
+  background: $sc-2;
+}
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: $sc-3;
+}
+
+.markdown-container {
+  padding: 20px 30px;
+  width: auto;
+  min-height: calc(100vh - 133px);
+  ul {
+    list-style-type: circle;
+    list-style-position: inside;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 100%;
+  border-top: 1px solid $text-color;
+}

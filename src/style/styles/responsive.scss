@@ -1,0 +1,34 @@
+@media only screen and (max-width: 600px) {
+  .toggle-sidebar {
+    display: inline;
+    position: absolute;
+    right: 15px;
+    z-index: 1000;
+  }
+  .sidebar {
+    display: none;
+  }
+  .showsidebar {
+    display: inline;
+    background-color: $background-color;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+  }
+  .menu-icon {
+    margin-top: 7px;
+    width: 30px;
+    height: 30px;
+    filter: invert(100%) sepia(0%) saturate(7440%) hue-rotate(98deg)
+      brightness(129%) contrast(85%);
+  }
+  .mainframe {
+    width: 100%;
+  }
+  .scroll-container {
+    height: calc(100vh - 51px);
+  }
+  .footer {
+    display: none;
+  }
+}
